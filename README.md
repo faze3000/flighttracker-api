@@ -1,6 +1,6 @@
 # Flight Tracker API
 
-Laravel backend for the Flight Tracker app: owns all writes to Supabase/Postgres, manages OAuth connections to Gmail/Outlook, ingests inbound emails, orchestrates the (separate) parse pipeline, and serves the Flutter app. Full spec in the project's `laravel-supabase-api-spec.md`.
+Laravel backend for the Flight Tracker app: owns all writes to Supabase/Postgres, manages OAuth connections to Gmail/Outlook, ingests inbound emails, orchestrates the (separate) parse pipeline, and serves the Flutter app. Full spec in `laravel-supabase-api-spec.md`; what's actually built, plus local/production configuration, is in [`IMPLEMENTATION.md`](IMPLEMENTATION.md).
 
 ## Architecture
 
