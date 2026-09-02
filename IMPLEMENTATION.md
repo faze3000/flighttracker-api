@@ -8,6 +8,7 @@ This documents what's actually built (vs. the spec in `laravel-supabase-api-spec
 - **Postgres** (Supabase-managed in production; SQLite in-memory for the test suite)
 - **Redis** — cache/sessions/queues driver, plus a second, unprefixed connection dedicated to the two cross-language queues
 - **Laravel Sanctum** for API auth (bearer tokens, no OAuth2 server overhead)
+- **Laravel Boost** (dev-only) — installed per [laravel.com/for/agents](https://laravel.com/for/agents), the guidance the `laravel/laravel` skeleton ships as `CLAUDE.md`/`AGENTS.md` for AI coding agents. Provides an MCP server (`.mcp.json`) and Claude Code skills (`.claude/skills/`) for schema/route/config introspection, plus app-tailored guidelines in `CLAUDE.md`. Not required to run the app; safe to remove (`composer remove laravel/boost --dev`) if you don't want the MCP server registered.
 
 ## 2. Architecture
 
